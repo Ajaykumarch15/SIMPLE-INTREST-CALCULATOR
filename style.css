@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    flex-direction: column;
+}
+
+h1 {
+    color: grey;
+    font-family: Verdana, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 95%;
+    /* Slightly increase width */
+    max-width: 650px;
+    /* Increase max width */
+    padding: 15px;
+    /* Reduce padding to decrease height */
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+button {
+    width: 80%;
+    /* Keep input width to ensure they don't stretch too wide */
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: lightgray;
+}

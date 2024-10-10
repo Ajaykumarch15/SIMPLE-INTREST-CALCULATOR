@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Interest Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <h1>Simple Interest Calculator</h1>
+            
+            <h3>AMOUNT</h3> <input type="number" id="principal"> <br />
+            <h3>RATE</h3><input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"><span id="rate_val">
+                10.25
+            </span>% <br /> <br />
+        <h3>NO. OF YEARS</h3>
+        <input type="number" id="years" list="all_years">
+        <datalist id="all_years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- Fill in the rest of the values -->
+        </datalist> <br />
+            <h3>INTREST</h3> : <span id="result"></span><br>
+            
+        <button onclick="compute()">Compute Interest</button>
+        <span id="result">
+        
+        </span>
+        </div>
+
+        <footer>
+            &#169; This Calculator belongs to *** ARK ***
+        </footer>
+    </body>
+</html>
